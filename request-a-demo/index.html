@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+</head>
+<body>
+    <h1>CHOOSE PROXY!!</h1>
+    <p>site proxy c:errorrail</p>
+    <button onclick="alerturl()">siteproxy</button>
+    <br>
+    <p>ksf games</p>
+    <script type="text/javascript">
+
+
+        function create(url) {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win. document.body.style.height = '100%';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border='none';
+            iframe.style.width = '100%' ;
+            iframe.style.height = '100%' ;
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+
+        function alerturl() {
+            let urlsite = prompt("enter URL to proxy", "DO NOT PUT 'https://'!! ").toLowerCase()
+
+            if (urlsite == null || urlsite == "") {
+                console.log("user cancled")
+            } else {
+                create(`https://siteproxy.secur1y.com/xxx/https/${urlsite}`)
+            }
+        }
+    </script>
+
+</body>
+</html>
